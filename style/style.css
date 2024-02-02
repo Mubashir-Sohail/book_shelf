@@ -1,0 +1,116 @@
+.bts{
+    color: rgb(240, 235, 235);
+    background-color: #05c9e3e1;
+    border-style:groove;
+    font-size: large;
+
+}
+input{
+      position: relative;
+      display: inline-block;
+      font-size: 20px;
+      box-sizing: border-box;
+      transition: 2s;
+}
+.input1
+{
+    
+    background:#e7dede ;
+    width: 300px;
+    height: 50px;
+    border: none;
+    outline: none;
+    padding: 0 25px;
+    border-radius: 25px 0 0 25px;
+}
+.input2
+{
+    color: rgb(0, 10, 18);
+    background:#e3ac05 ;
+    width: 130px;
+    height: 50px;
+    border: none;
+    outline: none;
+    padding: 0 25px;
+    border-radius: 0 25px 25px 0;
+    cursor: pointer;
+}
+.input2:hover{
+    color: rgb(85, 85, 85);
+   background-color: #ffbb009b;
+}
+.input1:hover{
+    color: rgb(0, 0, 0);
+   background-color: #bdbbbb;
+}
+
+.bk{
+    background-color: rgb(52, 51, 51);
+}
+.box2{
+    color: rgb(255, 255, 255);
+    
+    font-size: 23px;
+    
+}
+.box3{
+    height: 36rem;
+    
+    background-color: rgba(0, 0, 0, 0.988);
+    color: rgb(255, 255, 255);
+    
+    font-size: 45px;
+    font-weight: 600;
+}
+.card{
+    transition: all 0.3s;
+
+}
+.card:hover{
+    
+    transform:scale(1.15);
+}
+
+.card1{
+    position: absolute;
+    
+
+}
+.card2{
+    position: relative;
+    
+}
+.bx{
+    height:100%;
+    width: 100%;
+    background-color: #e3ac05;
+}
+h3{
+    font-size:xx-large;
+    font-weight:bolder;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.bimg{
+    
+     transition: 2s;
+     background:#e7dede ;
+     
+}
+.bimg:hover{
+    background-color: #5e5b5b;
+}
+.bn{
+    
+    border: rgb(12, 12, 12);
+    border-style:dashed;
+    width: 15rem;
+    height: 9em;
+    border-radius: 10%;
+}
+.box4{
+    height: 50;
+    background-color:rgb(51, 51, 51);
+    color: white;
+    font-size: large;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
