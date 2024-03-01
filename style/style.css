@@ -5,6 +5,13 @@
     font-size: large;
 
 }
+.btns{
+    color: rgb(36, 34, 34);
+    background-color: #e5d013;
+    border-style:groove;
+    font-size: large;
+
+}
 input{
       position: relative;
       display: inline-block;
@@ -70,6 +77,23 @@ input{
     
     transform:scale(1.15);
 }
+.card4{
+    transition: all 0.3s;
+}
+.card4:hover{
+    transform:scale(1.15);
+}
+
+.card3{
+    transition: all 0.3s;
+}
+.card3:hover{
+    animation: pulse 1s infinite;
+}
+@keyframes pulse{
+   0%, 100% {transform: scale(1.2);}
+    50%{ transform: scale(1);}    
+}
 
 .card1{
     position: absolute;
@@ -114,3 +138,326 @@ h3{
     font-size: large;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
+.box5{
+    height: 50;
+    background-color:rgb(167, 163, 163);
+    color: rgb(0, 0, 0);
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.box6{
+    height: 50;
+    background-color:rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.icon{
+      
+}
+
+
+.feature{
+   color:#5e5b5b;
+   padding-top: 8% ;
+
+}
+
+
+  /* Add an arrow before the link text */
+  .ankar {
+    text-decoration: none;
+    color: white;
+    position: relative;
+    display: inline-block;
+    font-size: large;
+    font-weight:400;
+}
+
+  .ankar:hover::after {
+    font-size: x-large;
+    font-weight: 400;
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 100%;
+    height: 3px;
+    background-color: white; /* Change this to your preferred color */
+  }
+
+
+
+
+
+
+  .image-container {
+    position: relative;
+    overflow: hidden;
+}
+
+
+
+  .img-container {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .click-img {
+    transition: filter 0.3s ease;
+  }
+  
+  .light-effect {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    
+    border-radius: 50%;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none; /* Ensures the overlay doesn't block clicks on the image */
+  }
+  
+  .img-container:hover .click-img {
+    filter: brightness(150%);
+  }
+  
+  .img-container:active .light-effect {
+    opacity: 1;
+    transition: none; /* Disable transition during active state */
+  }
+
+
+  /*flipbook*/
+ 
+   .book{
+    
+    position: relative;
+    width: 350px;
+    height: 500px;
+   }  
+   .paper{
+   
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   top: 0;
+   left: 0;
+   perspective: 1500px;
+
+   }
+   .front,.back{
+    background-color: #e3ac05;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transform-origin: left;
+    transition: transform 0.5s;
+   }
+  .front{
+    z-index: 1;
+  }
+  .back{
+    z-index: 0;
+  }
+  .front-content,.back-content{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  /* paper flip effect*/
+  .flipped .front,
+  .flipped .back{
+    transform: rotateY('-180deg');
+  }
+  /*controller button*/
+  .bttn{
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    margin: 10px;
+  }
+  .bttn:focus{
+    outline: none;
+  }
+  button:hover i{
+    color: #5e5b5b;
+  }
+  i{
+    font-size: 50px;
+    color: #5e5b5b;
+  }
+  /* paper stack order  */
+  #p1{
+    z-index: 3;
+  }
+  #p2{
+    z-index: 2;
+  }
+  #p3{
+    z-index: 1;
+  }
+
+
+
+     /*footer*/
+.footer{
+    background: #000;
+    color: #8a8a8a;
+    font-size: 14px;
+    padding: 60px 0 20px;
+}
+.footer p{
+    color: #8a8a8a;
+}
+.footer h3{
+    color: #fff;
+    margin-bottom: 20px;
+}
+.footer-col-1, .footer-col-2, .footer-col-3, .footer-col-4{
+    min-width: 250px;
+    margin-bottom: 20px;
+}
+.footer-col-1{
+    flex-basis: 30%;
+}
+.footer-col-2{
+    flex: 1;
+    text-align: center;
+}
+.footer-col-2 img{
+    width: 180px;
+    margin-bottom: 20px;
+}
+.footer-col-3, .footer-col-4{
+    flex-basis: 12%;
+    text-align: center;
+}
+ul{
+    list-style-type: none;
+}
+.app-logo{
+    margin-top: 20px;
+}
+.app-logo img{
+    width: 140px;
+}
+.footer hr{
+    border: none;
+    background: #b5b5b5;
+    height: 1px;
+    margin: 20px 0;
+}
+.copyright{
+    text-align: center;
+}
+.menu-icon{
+    width: 28px;
+    margin-left: 20px;
+    display: none;
+}
+
+
+
+/* animation*/
+.box9{animation: pulse 1s infinite;}
+@keyframes pulse{
+    0%, 80%{transform: scale(1);}
+    40%{transform: scale(1.1);}
+}
+
+.flipbook {
+	width: 300px;
+	height: 100px;
+	background: red;
+	position: relative;
+    -moz-perspective: 1100px;
+    -moz-perspective-origin: 50% 50%;
+    -webkit-perspective: 1100px;
+    -webkit-perspective-origin: 50% 50%;
+}
+
+.flipbook .page {
+	position: absolute;
+	width: 50%;
+	height: 100%;
+}
+
+.flipbook .pagewrap {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+.flipbook .innerpage {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	-moz-backface-visibility: hidden;
+	-webkit-backface-visibility: hidden;
+}
+
+.flipbook .innerpage.inner_right {
+	background: blue;
+}
+
+.flipbook .innerpage.inner_left {
+	background: green;
+    -moz-transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+}
+
+.flipbook .page .page_content {
+	width: 200%;
+	height: 100%;
+	position: relative;
+}
+
+.flipbook .left {
+	left: 0;
+	z-index: 1;
+}
+
+.flipbook .right {
+	right: 0;
+	z-index: 1;
+	background: yellow;
+}
+
+.flipbook .center {
+	right: 0;
+	z-index: 2;
+}
+
+.flipbook .center.flipped {
+    -moz-transform: rotateY(-180deg);
+    -moz-transform-origin: left center;
+    -moz-transform-style: preserve-3d;
+    -moz-transition-duration: 1500ms;
+    -moz-transition-property: -moz-transform;
+    -moz-transition-timing-function: ease;
+
+    -webkit-transform: rotateY(-180deg);
+    -webkit-transform-origin: left center;
+    -webkit-transform-style: preserve-3d;
+    -webkit-transition-duration: 1500ms;
+    -webkit-transition-property: -webkit-transform;
+    -webkit-transition-timing-function: ease;
+}
+
+
+.flipbook .rightpage .page_content {
+	left: -100%;
+}
+
+
+         
